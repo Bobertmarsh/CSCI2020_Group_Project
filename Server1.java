@@ -1,5 +1,3 @@
-
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -104,9 +102,9 @@ public class Server1 extends Application {
             System.out.println("Thread is running");
             while (true) {
                 try {
-                    System.out.println("Now accepting socket connections");
+                    System.out.println("Program is now accepting socket connections");
                     Socket clientSocket = serverSocket.accept();
-                    System.out.println("Got a connection");
+                    System.out.println("New Connection!");
                     // Launch serverGetTextJob and put it into a thread
                     Thread t = new Thread(new getText(clientSocket));
                     t.start();
@@ -133,7 +131,7 @@ public class Server1 extends Application {
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 while ((message = in.readLine()) != null) {
                     txtLog.appendText(message + "\n");
-                    System.out.println("Message being read is " + message);
+                    System.out.println("New message from " + message);
                 }
 			// Error handling
             } catch (IOException e) {
