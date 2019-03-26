@@ -2,7 +2,7 @@
 
 ## About the Project
 Our project goal is a chat client with the ability to export logs as .txt.
-To do this we used many of the tools that we learned about through the labs for this course
+To do this we used many of the tools that we learned about through the labs for this course.
 
 ## Contributions
 * Hubert Giang
