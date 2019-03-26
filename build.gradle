@@ -6,8 +6,13 @@
  */
 
 plugins {     
-	id 'java' 
+	id 'java'
+	id 'application'
 }
+
+mainClassName = 'csci2020u.CSCI2020_Group_Project-master.Server1'
+mainClassName = 'csci2020u.CSCI2020_Group_Project-master.Client1'
+
 
 repositories {     
 	mavenCentral() 
